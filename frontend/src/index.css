@@ -1,0 +1,169 @@
+body {
+  background: rgb(170, 172, 152);
+  background: linear-gradient(
+    180deg,
+    rgba(170, 172, 152, 1) 0%,
+    rgba(123, 148, 154, 1) 23%,
+    rgba(136, 118, 7, 1) 48%,
+    rgba(36, 36, 36, 1) 76%,
+    rgba(8, 4, 4, 1) 100%
+  );
+  font-family: "Chakra Petch", sans-serif;
+}
+.not-found-back {
+  background-image: url(./img/NotFound.png);
+  height: 100vh;
+
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+/* .not-found-back div {
+  background: rgb(148, 148, 148);
+
+  width: 35vw;
+  height: 25vh;
+  opacity: 1;
+  border: 2px;
+  border-radius: 15px;
+} */
+.jumbo {
+  background-image: url(./img/ArtGalleries.png), url(./img/JumboBack.png);
+  height: 100vh;
+
+  background-size: contain, cover;
+  background-position: left, center;
+  background-repeat: no-repeat, no-repeat;
+}
+
+@media (max-width: 992px) {
+  .jumbo {
+    background-image: url(./img/ArtGalleries.png), url(./img/JumboBack.png);
+    height: 100vh;
+    width: 101.5%;
+    background-size: contain, cover;
+    background-position: left, center;
+    background-repeat: no-repeat, no-repeat;
+  }
+}
+@media (max-width: 576px) {
+  .jumbo {
+    background-image: url(./img/ArtGalleries.png), url(./img/JumboBack.png);
+    height: 100vh;
+    width: 103%;
+    background-size: contain, cover;
+    background-position: left, center;
+    background-repeat: no-repeat, no-repeat;
+  }
+}
+
+.card-img {
+  object-fit: cover;
+  width: 500px;
+  height: 500px;
+  padding: 5px;
+}
+.card-dimension {
+  width: 35vw;
+  background: rgb(170, 172, 152);
+  background: linear-gradient(
+    0deg,
+    rgba(170, 172, 152, 0.9) 0%,
+    rgba(123, 148, 154, 0.8) 23%,
+    rgba(136, 118, 7, 0.7) 48%,
+    rgba(36, 36, 36, 0.6) 76%,
+    rgba(8, 4, 4, 0.5) 100%
+  );
+}
+.card-exhibition {
+  width: 50vw;
+  height: 75%;
+  background: rgb(170, 172, 152);
+  background: linear-gradient(
+    0deg,
+    rgba(170, 172, 152, 0.9) 0%,
+    rgba(123, 148, 154, 0.8) 23%,
+    rgba(136, 118, 7, 0.7) 48%,
+    rgba(36, 36, 36, 0.6) 76%,
+    rgba(8, 4, 4, 0.5) 100%
+  );
+}
+.gallery-back {
+  background-image: url(./img/galleryBack.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 100px;
+  height: 75vh;
+}
+.artwork-back {
+  background-image: url(./img/artworkBack.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 75vh;
+}
+@media (max-width: 992px) {
+  .relative-dimension {
+    display: none;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #ffc107a8;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.829);
+  border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+  .card-img {
+    width: 350px;
+    height: 350px;
+  }
+  .card-dimension {
+    width: 50vw;
+  }
+  /* CUSTOM WIDTHS */
+  .w-lg-25 {
+    width: 25% !important;
+  }
+  .w-lg-50 {
+    width: 50% !important;
+  }
+  .w-lg-75 {
+    width: 75% !important;
+  }
+  .w-lg-100 {
+    width: 100% !important;
+  }
+}
+@media (max-width: 576px) {
+  .card-img {
+    width: 200px;
+    height: 200px;
+  }
+  .card-dimension {
+    width: 50vw;
+  }
+  /* CUSTOM WIDTHS */
+  .w-sm-25 {
+    width: 25% !important;
+  }
+  .w-sm-50 {
+    width: 50% !important;
+  }
+  .w-sm-20 {
+    width: 75% !important;
+  }
+  .w-sm-100 {
+    width: 100% !important;
+  }
+}
